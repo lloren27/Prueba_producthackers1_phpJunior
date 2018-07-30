@@ -7,7 +7,7 @@
     <title>Formaulario de invitacion</title>
 </head>
 <body>
-    <form action="guardar.php" method="POST">
+    <form action="guardar.php" method="GET">
     <h1>Formulario para conseguir una invitación de suscripción</h1>
     <input type="text" REQUIRED name="email" placeholder="email" value=""/>
     <input type="submit" value="Aceptar"/>
