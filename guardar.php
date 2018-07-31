@@ -1,21 +1,22 @@
 <?php
 include("conexion.php");
+session_start();
 
-$email=$_GET['email'];
-$random_token = bin2hex(random_bytes(12));
+$token = $_POST['token'];
+$email=$_POST['email'];
 
-$query="INSERT INTO wp_unknown_followers(email,token) VALUES('$email','$random_token')";
+$query="INSERT INTO wp_unknown_followers(email,token) VALUES('$email','$token')";
 $resultado= $conexion->query($query);
 
-if($resultado){
-    echo " Se guardo el correo de forma correcta";
-    echo ($random_token);
+if($_SESSION['token'] == $token){
+    $email = $_POST['email'];
+    echo "Hola " . $email;
+    header('Location: selectAutor.php');
 }else{
-    echo " No se pudo guardar";
-    echo ($random_token);
+    echo "Has intentado acceder sin cumplir con el token";
 }
 
-/// redirecciona esta pagina 
-header('Location: selectAutor.php');
-
 ?>
+
+
+

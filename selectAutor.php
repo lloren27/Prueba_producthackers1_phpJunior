@@ -9,6 +9,9 @@
 </head>
 
 <body>
+<?php
+session_start();
+?>
 	<form action="suscripcion.php" method="POST">
 		<h1>Selecciona los autores a los que deseas suscribirte </h1>
 		<ul>
