@@ -6,10 +6,9 @@ $token=$_SESSION['token'];
 $author=$_POST['author_id'];
 
 
-$query="SELECT id FROM wp_unknown_followers WHERE token = '$token'"; //// QUIERO COGER EL RESULTADO DE LA CONSULTA 
-///////////////////////////////////////////////////PRUEBA/////////////////////////////////////////////////////////
+$query="SELECT id FROM wp_unknown_followers WHERE token = '$token'"; 
 $resultado=mysqli_query($conexion,$query);
-/* Si Hay Resultados*/
+
 if(mysqli_num_rows($resultado)>0){
     $arrayUsuarios = $resultado->fetch_assoc();
     $follower_id = $arrayUsuarios ['id'];
@@ -17,8 +16,7 @@ if(mysqli_num_rows($resultado)>0){
 else{
     echo "NO HAY RESULTADOS";
 }
-///////////////////////////////PRUEBA////////////////////////////////////////////////////////////////////////////////
-$query2="INSERT INTO wp_followings(follower_id,author_id) VALUES('$follower_id','$author')"; /// Y METERLA AQUI PARA GUARDA LA NUEVA SUSCRIPCION 
+$query2="INSERT INTO wp_followings(follower_id,author_id) VALUES('$follower_id','$author')"; 
 $resultado2= $conexion->query($query2);
 
 if($resultado2){

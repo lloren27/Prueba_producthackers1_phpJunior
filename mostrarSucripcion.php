@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Mis autores suscritos</title>
 </head>
-<body>
+<body style=" background-color: #268BE6; color: white; ">
     <center>
         <table border="3">
             <thead>
@@ -40,7 +40,7 @@
                     <tr>
                         <td><?php echo $row['follower_id']; ?></td>
                         <td><?php echo $row['author_id']; ?></td>
-                        <td><a href="localizarModificar.php?id=<?php echo $row['follower_id'];?>">Modificar</a></td>
+                        <td><a href="localizarModificar.php?follower_id=<?php echo $row['follower_id'];?>">Modificar</a></td>
                     </tr>   
                 <?php
                 }
@@ -81,6 +81,8 @@
                 </tr>
             </tbody>
         </table>
+        <br>
+        <a href="index.php">Ir al index</a>
     </center>
 </body>
 </html>

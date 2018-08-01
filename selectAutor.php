@@ -8,7 +8,7 @@
 	<title>Suscripción de autores</title>
 </head>
 
-<body>
+<body style=" background-color: #268BE6; color: white; ">
 <?php
 session_start();
 ?>
@@ -17,31 +17,31 @@ session_start();
 		<ul>
 			<li>
 				<label>
-					<input type="checkbox" name="author_id" value="1" />
+					<input type="radio" name="author_id" value="1" />
 					<span>Marta Robles</span>
 				</label>
 			</li>
 			<li>
 				<label>
-					<input type="checkbox" name="author_id" value="2" />
+					<input type="radio" name="author_id" value="2" />
 					<span>Eduardo Inda</span>
 				</label>
 			</li>
 			<li>
 				<label>
-					<input type="checkbox" name="author_id" value="3" />
+					<input type="radio" name="author_id" value="3" />
 					<span>Patricia Navarro</span>
 				</label>
 			</li>
 			<li>
 				<label>
-					<input type="checkbox" name="author_id" value="4" />
+					<input type="radio" name="author_id" value="4" />
 					<span>Francisco Marguenda</span>
 				</label>
 			</li>
 			<li>
 				<label>
-					<input type="checkbox" name="author_id" value="5" />
+					<input type="radio" name="author_id" value="5" />
 					<span>Agatha Ruiz de la Prada</span>
 				</label>
 			</li>
