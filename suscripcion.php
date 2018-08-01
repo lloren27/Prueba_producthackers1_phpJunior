@@ -23,13 +23,8 @@ $resultado2= $conexion->query($query2);
 
 if($resultado2){
     echo " Su suscripcion se ha completado";
-    echo $query2;
- 
+    header('Location: mostrarSucripcion.php');
 }else{
     echo " No se se pudo completar su suscripcion";
-    echo $query2;
-    
 }
-
-
 ?>
