@@ -14,7 +14,7 @@ session_start();
 ?>
 	<form action="suscripcion.php" method="POST">
 		<h1>Selecciona los autores a los que deseas suscribirte </h1>
-		<ul>
+		<ul style="list-style:none;">
 			<li>
 				<label>
 					<input type="radio" name="author_id" value="1" />
@@ -47,7 +47,7 @@ session_start();
 			</li>
 		</ul>
 		<br>
-		<input type="submit" value="Aceptar" />
+		<input type="submit" value="Aceptar" style="background-color:white;border-radius:20px;text-align:center;color:#268BE6;font-size:15px;" />
 	</form>
 </body>
 

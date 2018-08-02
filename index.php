@@ -16,7 +16,7 @@ $_SESSION['token'] = $token;
  
 ?>
 <br>
-<h1>Bienvenido al servicio de suscripcion de autores</h1>
+<h1>Bienvenido al servicio de suscripcion Younews</h1>
 <div style="background-color:white;border-radius:30px;text-align:center;padding-top:10px;padding-bottom:10px;margin-left: 100px;margin-right: 100px;">
 <a href="formulario.php"style="color: #268BE6;font-size:25px;text-decoration: none;">Ir al formulario</a>
 </div>

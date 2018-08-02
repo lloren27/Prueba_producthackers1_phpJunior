@@ -11,7 +11,7 @@
         <table border="3">
             <thead>
                 <tr>
-                    <th colspan="3">Mis suscripciones</th>
+                    <th colspan="3" style="color:blue;background-color:white;">Mis suscripciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -37,10 +37,10 @@
                 $resultado = $conexion->query($query);
                 while($row=$resultado->fetch_assoc()){ 
                 ?>
-                    <tr>
+                    <tr style="text-align:center;">
                         <td><?php echo $row['follower_id']; ?></td>
                         <td><?php echo $row['author_id']; ?></td>
-                        <td><a href="localizarModificar.php?follower_id=<?php echo $row['follower_id'];?>">Modificar</a></td>
+                        <td style="background-color:white;text-decoration: none;"><a href="localizarModificar.php?follower_id=<?php echo $row['follower_id'];?>">Eliminar</a></td>
                     </tr>   
                 <?php
                 }
@@ -51,7 +51,7 @@
         <table border = "1">
         <thead>
                 <tr>
-                    <th colspan="2">Autores</th>
+                    <th style="color:blue;background-color:white;" colspan="2">Autores</th>
                 </tr>
             </thead>
             <tbody>
@@ -82,7 +82,9 @@
             </tbody>
         </table>
         <br>
-        <a href="index.php">Ir al index</a>
+        <div style="background-color:white;border-radius:30px;text-align:center;padding-top:10px;padding-bottom:10px;margin-left: 100px;margin-right: 100px;">
+        <a href="index.php" style="color: #268BE6;font-size:25px;text-decoration: none;">Ir al index</a>
+        </div>
     </center>
 </body>
 </html>
